@@ -9,3 +9,6 @@
     - Designed By 良哥 -18级
     - 19级
     - 弈龙 -20级
+
+## 代码合并规范
+    - 从 master 分支 checkout 新分支，在新分支写完后提pr
