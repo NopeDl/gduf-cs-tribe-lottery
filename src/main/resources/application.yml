@@ -4,7 +4,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.101.10.168:3307/lottery?serverTimezone=GMT%2B8
+    url: jdbc:mysql://lottery-mysql/lottery?serverTimezone=GMT%2B8
     #不设置此项的话默认是使用springboot的连接池tomcat
     type: com.alibaba.druid.pool.DruidDataSource
 
@@ -31,7 +31,7 @@ spring:
     #数据库索引
     database: 0
     #数据库地址
-    host: 47.101.10.168
+    host: lottery-redis
     #连接端口
     port: 6379
     #配置redis客户端信息
@@ -54,7 +54,7 @@ mybatis:
 server:
   servlet:
     context-path: /lottery
-  port: 80
+  port: 8080
   tomcat:
     accept-count: 500
     max-connections: 8192
